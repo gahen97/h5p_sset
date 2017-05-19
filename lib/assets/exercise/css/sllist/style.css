@@ -78,7 +78,7 @@
       #question {
           font-family: monospace;
           width: 80%;
-          height: 80%;
+          height: 800px;
           border: 1px solid black;
           position: relative;
           box-shadow: 10px 10px 5px #888888;
@@ -128,6 +128,14 @@
       .plumbSource{
         z-index: 99;
       }
+      div.listPointers{
+        position: absolute; 
+        top: 40px; 
+        height: 185px; 
+        width: 130px; 
+        border: 1px solid black; 
+        box-shadow: 1px 1px 0px 0px black;
+      }
       div.node{
         width: 63px;
         display: inline-block;
@@ -148,6 +156,11 @@
       div.node.new{
         top: 178px;
       }
+      div.node.head > div.data, div.node.tail > div.data,
+      div.node.cur > div.data, div.node.new > div.data
+      {
+        border-right: 1px solid black;
+      }
       div.node > div {
         width: 30px;
         height: 28px;
@@ -165,6 +178,8 @@
       }
       div.data.bigger{
         width: 75px;
+      }
+      div.listPointers{
       }
       div.pointer{
         width: 30px;

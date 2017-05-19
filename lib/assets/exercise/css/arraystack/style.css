@@ -90,6 +90,7 @@
       }
       #question {
           font-family: monospace;
+	  size: 12px;
       }
       .textin {
           letter-spacing: 1em;

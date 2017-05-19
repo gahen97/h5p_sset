@@ -2,8 +2,7 @@ tr(id="row" + index,data-index=index)
   td
     -if (typeof(addElem) !== 'undefined'){
       | add(
-      div(style="border:2px solid DarkTurquoise; width:17px; height:17px; display:inline-block; margin-left:2px; margin-right:2px; text-align:center")
-        div(id="new" + index, class="element newItem pointer")= addElem
+      div(id="new" + index, class="element newItem")= addElem
       | );
     -} else if (typeof(removeElem) !== 'undefined'){
       | remove(
@@ -12,7 +11,7 @@ tr(id="row" + index,data-index=index)
     -}
   td
     .textin
-      img.droppable(src='img/trash.jpg', height='15', width='15')
+      img.droppable(src='img/trash.jpg', height='10', width='10')
       ul(id="set" + index, class="textin items")
     a#check.button(href='nojavascript.html', onclick='btnClick(this); return false') Check
     a#reset.button(href='nojavascript.html', onclick='resetBtn(this); return false') Reset
@@ -24,8 +23,7 @@ tr(id="reset" + index, class="hidden")
   td
     -if (typeof(addElem) !== 'undefined'){
       | add(
-      div(style="border:2px solid DarkTurquoise; width:15px; height:15px; display:inline-block; margin-left:2px; margin-right:2px; text-align:center")
-        div(id="new" + index, class="element newItem pointer")= addElem
+      div(id="new" + index, class="element newItem")= addElem
       | );
     -} else if (typeof(removeElem) !== 'undefined'){
       | remove(
@@ -34,7 +32,7 @@ tr(id="reset" + index, class="hidden")
     -}
   td
     .textin
-      img.droppable(src='img/trash.jpg', height='15', width='15')
+      img.droppable(src='img/trash.jpg', height='10', width='10')
       ul(id="set" + index, class="textin items")
     a#check.button(href='nojavascript.html', onclick='btnClick(this); return false') Check
     a#reset.button(href='nojavascript.html', onclick='resetBtn(this); return false') Reset

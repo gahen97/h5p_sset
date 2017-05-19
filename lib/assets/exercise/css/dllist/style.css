@@ -1,0 +1,201 @@
+      body {
+        font: 14pt/22pt serif;
+      }
+      .disabled{
+        opacity: 0.3;
+      }
+      div.titleblock {
+        /* background-color: #abcdd9; */
+        background-color: rgb(204,0,51); /* CU red */ 
+        padding: 4ex 4ex 4ex 4ex;
+        color: white;
+      }
+      div.title {
+        padding: 1ex 0ex 1ex 0ex;
+        font-size: 168%;
+        font-family: "FreeSans", sans-serif;
+        font-weight: 900;
+      }
+      div.subtitle {
+        font-size: 100%;
+        font-family: "FreeSans", sans-serif;
+      }
+      a.button {
+        padding: 3pt 6pt 3pt 6pt;
+        border: 2px solid rgb(204,0,51); /* CU red */ 
+        color: rgb(204,0,51); /* CU red */ 
+        margin-left: 9px;
+      }
+      a.button.default {
+        border-color: #666;
+        color: #666;
+        border-style: #666;
+      }
+      a.button.check {
+        border-color: #282;
+        color: #282;
+        border-style: #282;
+      }
+      a.button:active {
+        border-color: black;
+        border-style: black;
+        color: black;
+      }
+      #contents {
+         margin: auto;
+	 max-width: 784px;
+         text-align: justify;
+      }
+      span#op {
+        display: inline-block;
+        float: right;
+        margin-right: 20%;
+      }
+      a {
+          text-decoration: none;
+          color: rgb(204,0,51); /* CU red */ 
+      }
+      .hidden {
+          display: none;
+      }
+      div.exercise:before {
+        font-weight: bold;
+	content: "Exercise:";
+      }
+      div.note:before{
+        font-weight: bold;
+        content: "NOTE: ";
+      }
+      div.note{
+        font-size: 12pt;
+      }
+      div.exercise {
+      }
+      div.element {
+      	height: 80%;
+      	display: inline-block;
+      	padding-left: 0;
+      	padding-right: 0;
+      	margin-left: 0;
+      	margin-right: 0;
+      }
+      .errormsg {
+         color: red;
+      }
+      #question {
+          font-family: monospace;
+          width: 90%;
+          height: 80%;
+          border: 1px solid black;
+          position: relative;
+          box-shadow: 10px 10px 5px #888888;
+      }
+      .textin {
+          letter-spacing: 1em;
+      }
+      span.textin {
+          color: lightgray;
+          margin-top: 3px;
+          padding-bottom: 1em;
+          padding-left: 5px;
+      }
+      ul.textin {
+	        margin: 0;
+          padding-left: 3px;
+	        margin-left: 20px;
+          border: 2px solid rgb(204,0,51); /* CU red */ 
+          width: 150px;
+          height: 15px;
+          display: inline-block;
+      }
+      div.textin {
+      	  display: inline-block;
+      }
+      span.checkmark {
+          font-size: 200%;
+          color: green;
+          float: right;
+          margin-right: 25px;
+      }
+      ul.new{
+      	display: inline-block;
+      }
+      ul.correct{
+        border-color: green !important; /* medium sea green */
+      }
+      a.correct{
+        border-color: green;
+        color: green;
+      }
+      .plumbTarget{
+        width: 63px !important;
+        height: 28px !important;
+        visibility: hidden;
+      }
+      .plumbSource{
+        z-index: 99;
+      }
+      div.node{
+        width: 96px;
+        display: inline-block;
+        border: 1px solid black;
+        position: absolute;
+      }
+      div.node.bigger{
+        width: 150px;
+      }
+      div.node.head{
+        top: 50px;
+      }
+      div.node.tail{
+        top: 78px;
+      }
+      div.node.cur{
+        top: 150px;
+      }
+      div.node.new{
+        top: 178px;
+      }
+      div.node > div {
+        width: 30px;
+        height: 28px;
+        display: table-cell;
+      	margin: 0;
+      	float: left;
+        text-align: center;
+        vertical-align: baseline;
+        font-size: 20px;
+        padding-top: 2px;
+      }
+      div.node > div.data{
+        border-right: 1px dashed black;
+        border-left: 1px dashed black;
+      }
+      div.data.bigger{
+        width: 75px;
+      }
+      div.pointer{
+        width: 30px;
+        height: 28px;
+        display: table-cell;
+        margin: 0;
+        text-align: center;
+        vertical-align: baseline;
+        font-size: 20px;
+        padding-top: 2px;
+      }
+      div.pointer.prev{
+        float: left;
+      }
+      div.pointer.next{
+        float: right;
+      }
+      p.index {
+        top: 30px;
+        margin-top: 0;
+        height: 20px;
+        color: darkgray;
+        font-family: monospace;
+        font-size: medium;
+        text-align: center;
+      }

@@ -1,3 +1,40 @@
+## Sean's edits:
+Exercises now work by path sent in the URL:
+  ex. localhost:8080/sllist
+
+Video should be placed inside:
+  lib -> h5p-content -> InteractiveVideo -> [ name ]
+
+Modules for running the exercise should be placed inside the exercise folder
+  under assets with the same name (.html)
+  For example, sllist would then be sllist.html
+Each should also be a given a folder under views with a render.pug file for rendering
+  the exercise,
+  and a module under the modules folder (name.js).
+
+Should end up looking like:
+  assets
+    exercise
+      name.html
+      modules
+        name.js
+      views
+        name
+          render.pug
+  h5p-content
+    InteractiveVideo
+      name
+        [h5p content files]
+
+And the server will then accept the connection at localhost:8080/name
+  and send back the provided files.
+If the video does not have an exercise, it will send back the video without attempting
+  to send an exercise (this is if name.html does not exist).
+
+I also added a resizeIframe.js script under exercise that is used with each exercise -
+  this way, the exercise height is dynamically adjusted to fit that exercise
+  (as the set exercise, for example, was larger than the Sllist and created extra space).
+
 
 ## Gahen's edits:
 to run server, navigate to lib and enter the following command: node ../bin/h5p-cli server.

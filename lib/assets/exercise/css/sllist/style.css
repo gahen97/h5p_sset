@@ -1,5 +1,11 @@
       body {
         font: 14pt/22pt serif;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
       .disabled{
         opacity: 0.3;
@@ -8,7 +14,12 @@
         /* background-color: #abcdd9; */
         background-color: rgb(204,0,51); /* CU red */ 
         padding: 4ex 4ex 4ex 4ex;
-        color: white;
+        color: white;◘
+dummy
+nullfc
+0
+xj
+0
       }
       div.title {
         padding: 1ex 0ex 1ex 0ex;
@@ -83,6 +94,11 @@
           position: relative;
           box-shadow: 10px 10px 5px #888888;
       }
+      div.inners {
+	  position: relative;
+	  top: 50px;
+	  height: calc(100% - 50px);
+      }
       .textin {
           letter-spacing: 1em;
       }
@@ -130,11 +146,9 @@
       }
       div.listPointers{
         position: absolute; 
-        top: 40px; 
-        height: 185px; 
-        width: 130px; 
-        border: 1px solid black; 
-        box-shadow: 1px 1px 0px 0px black;
+        height: 50px;
+        width: 100%;
+	border-bottom: 1px solid black;
       }
       div.node{
         width: 63px;
@@ -145,16 +159,22 @@
         width: 110px;
       }
       div.node.head{
-        top: 50px;
+        top: 10px;
       }
       div.node.tail{
-        top: 78px;
+        top: 10px;
+        left: calc(100% - 110px);
+      }
+      div.node.null{
+        top: 10px;
+        left: calc(50% - 55px);
       }
       div.node.cur{
-        top: 150px;
+        bottom: 0px;
       }
       div.node.new{
-        top: 178px;
+	bottom: 0px;
+	right: 0px;
       }
       div.node.head > div.data, div.node.tail > div.data,
       div.node.cur > div.data, div.node.new > div.data
@@ -178,8 +198,6 @@
       }
       div.data.bigger{
         width: 75px;
-      }
-      div.listPointers{
       }
       div.pointer{
         width: 30px;

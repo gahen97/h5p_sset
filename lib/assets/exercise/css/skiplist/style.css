@@ -22,7 +22,7 @@
       }
       a.button {
         padding: 3pt 6pt 3pt 6pt;
-        border: 2px solid rgb(204,0,51); /* CU red */ 
+        border: 2px solid rgb(204,0,51); /* CU red llist*/ 
         color: rgb(204,0,51); /* CU red */ 
         margin-left: 9px;
       }
@@ -93,11 +93,17 @@
       }
       #question {
           font-family: monospace;
-          width: 100%;
+          width: 95%;
           height: 800px;
           border: 1px solid black;
           position: absolute;
           box-shadow: 10px 10px 5px #888888;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
       .textin {
           letter-spacing: 1em;
@@ -167,6 +173,14 @@
       }
       div.node.searchPath > div.data, div.node.searchPath > div.pointer{
         background-color: #CCC;
+      }
+      div.node.new > div.data, div.node.new > div.pointer{
+	background-color: #b1e888;
+      }
+      svg.new path {
+	  stroke:#b1e888;
+	  stroke-width:3;
+    fill: #b1e888;
       }
       div.node > div.data{
         border-right: none;

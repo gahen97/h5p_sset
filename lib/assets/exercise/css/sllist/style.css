@@ -1,11 +1,5 @@
       body {
         font: 14pt/22pt serif;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
       }
       .disabled{
         opacity: 0.3;
@@ -14,12 +8,7 @@
         /* background-color: #abcdd9; */
         background-color: rgb(204,0,51); /* CU red */ 
         padding: 4ex 4ex 4ex 4ex;
-        color: white;◘
-dummy
-nullfc
-0
-xj
-0
+        color: white;
       }
       div.title {
         padding: 1ex 0ex 1ex 0ex;
@@ -93,6 +82,12 @@ xj
           border: 1px solid black;
           position: relative;
           box-shadow: 10px 10px 5px #888888;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
       div.inners {
 	  position: relative;

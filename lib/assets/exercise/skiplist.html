@@ -8,6 +8,9 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.2.9/jsplumb.min.js"></script>
 
+  <script src="js/skiplist/defs.js"></script>
+  <script src="js/skiplist/Debounce.js"></script>
+  <script src="js/skiplist/Helpers.js"></script>
   <script src="js/skiplist/Random.js"></script>
   <script src="js/skiplist/Load.js"></script>
   <script src="js/skiplist/DOM.js"></script>
@@ -38,6 +41,7 @@
         <div class='note'>To add an element to the search path, drag your mouse over the element.<br>When finished, click the element to check your path.</div>
       </div>
        <p>
+        <a id="checkBtn" class="button check" href="nojavascript.html" onclick="Buttons.check(); return false">Check</a>
         <a class="button default" href="nojavascript.html" onclick="Buttons.restart(); return false">Restart</a>
         <a class="button default" href="nojavascript.html" onclick="Buttons.reset(); return false">Reset</a>
         <span id="op"></span>

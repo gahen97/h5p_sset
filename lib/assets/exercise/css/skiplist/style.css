@@ -29,12 +29,10 @@
       a.button.default {
         border-color: #666;
         color: #666;
-        border-style: #666;
       }
       a.button.check {
         border-color: #282;
         color: #282;
-        border-style: #282;
       }
       a.button:active {
         border-color: black;
@@ -48,8 +46,8 @@
       }
       span#op {
         display: inline-block;
-        float: right;
-        margin-right: 20%;
+	position: absolute;
+	left: 300px;
       }
       a {
           text-decoration: none;
@@ -57,6 +55,9 @@
       }
       .hidden {
         visibility: hidden;
+      }
+      .hiddenNoSpacing {
+	display: none;
       }
       div.exercise:before {
         font-weight: bold;
@@ -129,8 +130,8 @@
       span.checkmark {
           font-size: 200%;
           color: red;
-          float: right;
-          margin-right: 25px;
+	  position: absolute;
+	  left: 400px;
       }
       span.checkmark.correct {
         color: green;
@@ -178,9 +179,9 @@
 	background-color: #b1e888;
       }
       svg.new path {
-	  stroke:#b1e888;
-	  stroke-width:3;
-    fill: #b1e888;
+	  stroke:#098c00;
+	  stroke-width:2;
+    fill: #098c00;
       }
       div.node > div.data{
         border-right: none;

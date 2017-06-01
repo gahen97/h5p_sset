@@ -44,7 +44,7 @@
 	 max-width: 784px;
          text-align: justify;
       }
-      span#op {
+      span#operation {
         display: inline-block;
 	position: absolute;
 	left: 300px;
@@ -80,6 +80,26 @@
       }
       div.note > ul > li.highlight{
         font-weight: bold;
+      }
+      div.alternate:before{
+        font-weight: bold;
+        content: "ALTERNATIVELY: ";
+      }
+      div.alternate{
+	font-size: 12pt;
+      }
+      div.alternate>ul{
+	margin: 0;
+      }
+      div.instructions{
+	font-size: 12pt;
+      }
+      div.instructions>ul{
+	margin: 0;
+      }
+      div.instructions:before{
+        font-weight: bold;
+        content: "INSTRUCTIONS: ";
       }
       div.element {
       	height: 80%;
@@ -208,4 +228,10 @@
       }
       .active > div{
 	background-color: #cee0f4;
+      }
+      div.length{
+	display: inline-block;
+	position: relative;
+	color: rgba(31, 117, 107, 0.55); 
+	font-size: 14px;
       }

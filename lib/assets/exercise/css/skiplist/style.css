@@ -232,6 +232,12 @@
       div.length{
 	display: inline-block;
 	position: relative;
-	color: rgba(31, 117, 107, 0.55); 
 	font-size: 14px;
+	color: rgba(31, 117, 107, 0.55); 
+      }
+      div.index{
+	display: inline-block;
+	position: absolute;
+	font-size: 14px;
+	color: rgb(0, 27, 249); 
       }

@@ -48,6 +48,16 @@
       div.exercise {
 	margin-left: 100px;
       }
+      div.instructions{
+	font-size: 12pt;
+      }
+      div.instructions>ol{
+	margin: 0;
+      }
+      div.instructions:before{
+        font-weight: bold;
+        content: "INSTRUCTIONS: ";
+      }
       div.note:before{
         font-weight: bold;
         content: "NOTE: ";

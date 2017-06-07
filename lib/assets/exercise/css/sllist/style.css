@@ -64,6 +64,32 @@
       }
       div.exercise {
       }
+      div.instructions{
+	font-size: 12pt;
+      }
+      div.instructions>ol{
+	margin: 0;
+      }
+      div.instructions:before{
+        font-weight: bold;
+        content: "INSTRUCTIONS: ";
+      }
+      div.note:before{
+        font-weight: bold;
+        content: "NOTE: ";
+      }
+      div.note{
+        font-size: 12pt;
+      }
+      div.note > ul {
+        margin-top: 0;
+      }
+      div.note > ul > li {
+        font-size: 12pt;
+      }
+      div.note > ul > li.highlight{
+        font-weight: bold;
+      }
       div.element {
       	height: 80%;
       	display: inline-block;

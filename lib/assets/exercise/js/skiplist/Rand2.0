@@ -1,0 +1,14 @@
+const MAX_INTEGER  = Math.pow (2, 32);
+const MAX_ATTEMPTS = 35;
+
+class Random {
+	static between (min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+	static get Integer () {
+		return Random.between (0, MAX_INTEGER)
+	}
+
+
+
+}

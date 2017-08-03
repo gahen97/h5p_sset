@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "/",
   "postUserStatistics": false,
   "ajaxPath": "/h5p-ajax/",
   "ajax": {

@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <title>The ArrayStack</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/arraystack/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- This is a lot of objects. I like objects. -->
+  <script src="js/arraystack/Answer.js"></script>
+  <script src="js/arraystack/Button.js"></script>
+  <script src="js/arraystack/Colors.js"></script>
+  <script src="js/arraystack/DOM.js"></script>
+  <script src="js/arraystack/Draggable.js"></script>
+  <script src="js/arraystack/Droppable.js"></script>
+  <script src="js/arraystack/Resizable.js"></script>
+  <script src="js/arraystack/Dropper.js"></script>
+  <script src="js/arraystack/Element.js"></script>
+  <script src="js/arraystack/Trash.js"></script>
+  <script src="js/arraystack/Set.js"></script>
+  <script src="js/arraystack/Row.js"></script>
+  <script src="js/arraystack/Indices.js"></script>
+  <script src="js/arraystack/ElementArray.js"></script>
+  <script src="js/arraystack/DropArray.js"></script>
+  <script src="js/arraystack/main.js"></script>
+
+    <script 
+      src="http://hyphenator.googlecode.com/svn/tags/Version%204.0.0/Hyphenator.js">
+    </script>
+  </head>
+  <body lang="en" class="hyphenate">
+      <div class='exercise'>
+    	Starting with an Array Stack that is initially empty, illustrate the evolution of the stack as the following operations are performed.
+       <div class='note'>For this exercise, array size is assumed to be:
+         <ul>
+            <li id="doubleSize">Doubled when array becomes full</li>
+            <li id="halfSize">Halved when array becomes less than one third full</li>
+         </ul>
+       </div>
+       <div class='instructions'>
+         <ul>
+           <li>Drag elements to move them around in the stack.</li>
+           <li>Drop the trash can on any element to delete it.</li>
+           <li>Drag the end of the stack to resize it.</li>
+           <li>Press the Check button to check your answer.</li>
+         </ol>
+       </div>
+       <p>
+       <table id="question">
+       	<tbody>
+       	</tbody>
+       </table>
+       <p>
+       <a class="button" href="nojavascript.html" onclick="Button.reload(); return false">Do it again!</a><p>
+    </div>
+    </div> <!-- contents -->
+  </body>
+  <script>Hyphenator.run();</script>
+</html>
+
+

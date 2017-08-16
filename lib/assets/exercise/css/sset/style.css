@@ -55,14 +55,17 @@
       	margin-left: 0;
       	margin-right: 0;
       }
-      .pointer {
-        cursor: pointer;
-      }
       .errormsg {
          color: red;
       }
       #question {
           font-family: monospace;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
       .textin {
           letter-spacing: 1em;
@@ -74,20 +77,19 @@
           padding-left: 5px;
       }
       ul.textin {
-	  margin: 0;
+	        margin: 0;
           padding-left: 3px;
-	  margin-left: 20px;
-          margin-right: 3em;
+	        margin-left: 20px;
           border: 2px solid rgb(204,0,51); /* CU red */ 
           width: 150px;
-          height: 16px;
+          height: 15px;
           display: inline-block;
       }
       div.textin {
       	  display: inline-block;
       }
       span.checkmark {
-       	  font-size: 200%;
+          font-size: 200%;
       }
       ul.new{
       	display: inline-block;

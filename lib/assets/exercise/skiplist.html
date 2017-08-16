@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <title>The Skiplist</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/skiplist/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.2.9/jsplumb.min.js"></script>
+
+  <script src="js/skiplist/defs.js"></script>
+  <script src="js/skiplist/Overload.js"></script>
+  <script src="js/skiplist/Debounce.js"></script>
+  <script src="js/skiplist/Helpers.js"></script>
+  <script src="js/skiplist/Random.js"></script>
+  <script src="js/skiplist/Rows.js"></script>
+  <script src="js/skiplist/Load.js"></script>
+  <script src="js/skiplist/DOM.js"></script>
+  <script src="js/skiplist/Checkmark.js"></script>
+  <script src="js/skiplist/Mode.js"></script>
+  <script src="js/skiplist/Skiplist.js"></script>
+  <script src="js/skiplist/Buttons.js"></script>
+  <script src="js/skiplist/Answer.js"></script>
+  <script src="js/skiplist/Activation.js"></script>
+  <script src="js/skiplist/Element.js"></script>
+  <script src="js/skiplist/ElementArray.js"></script>
+  <script src="js/skiplist/NodesArray.js"></script>
+  <script src="js/skiplist/Nodes2D.js"></script>
+  <script src="js/skiplist/JsPlumb.js"></script>
+  <script src="js/skiplist/Pointer.js"></script>
+  <script src="js/skiplist/Node.js"></script>
+  <script src="js/skiplist/Tower.js"></script>
+  <script src="js/skiplist/Towers.js"></script>
+  <script src="js/skiplist/Build.js"></script>
+  <script src="js/skiplist/main.js"></script>
+  <script src="js/skiplist/KeyTrack.js"></script>
+
+    <script 
+      src="http://hyphenator.googlecode.com/svn/tags/Version%204.0.0/Hyphenator.js">
+    </script>
+  </head>
+  <body lang="en" class="hyphenate">
+      <div class='exercise'>
+      	Given a Skiplist, draw the search path for a given element.
+        <div class='instructions'>
+		Find the search path for a given element!
+		<ul>
+			<li>Drag your mouse over the next element to add it to the search path.</li>
+			<li>When finished, click the element to check your answer!</li>
+		</ul>
+		<div class='alternate'>
+			<ul>
+				<li>Press the down arrow to move down</li>
+				<li>Press the right arrow to move right</li>
+				<li>Press enter to check your search path</li>
+			</ul>
+		</div>
+	</div>
+      </div>
+       <p>
+        <a id="checkBtn" class="button check" href="nojavascript.html" onclick="Buttons.check(); return false">Check</a>
+        <a class="button default" href="nojavascript.html" onclick="Buttons.restart(); return false">Restart</a>
+        <a class="button default" href="nojavascript.html" onclick="Buttons.reset(); return false">Reset</a>
+        <span id="operation"></span>
+        <span class="checkmark"></span>
+      </p>
+         <div id="question">
+         </div>
+       <br>
+       <p>
+    </div>
+    </div> <!-- contents -->
+  </body>
+  <script>Hyphenator.run();</script>
+</html>
+
+

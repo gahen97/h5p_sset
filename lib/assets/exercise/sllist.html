@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <title>The SLList</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/sllist/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.2.9/jsplumb.min.js"></script>
+
+  <script src="js/sllist/DOM.js"></script>
+  <script src="js/sllist/Checkmark.js"></script>
+  <script src="js/sllist/Activation.js"></script>
+  <script src="js/sllist/JsPlumb.js"></script>
+  <script src="js/sllist/Pointer.js"></script>
+  <script src="js/sllist/Node.js"></script>
+  <script src="js/sllist/AutoNode.js"></script>
+  <script src="js/sllist/ElementArray.js"></script>
+  <script src="js/sllist/NodesArray.js"></script>
+  <script src="js/sllist/Answer.js"></script>
+  <script src="js/sllist/Buttons.js"></script>
+  <script src="js/sllist/Save.js"></script>
+  <script src="js/sllist/main.js"></script>
+  <script src="js/sllist/Load.js"></script>
+
+    <script 
+      src="http://hyphenator.googlecode.com/svn/tags/Version%204.0.0/Hyphenator.js">
+    </script>
+  </head>
+  <body lang="en" class="hyphenate">
+      <p>
+      You can also read about the SLList in <a
+     href="http://opendatastructures.org/ods-java/3_1_SLList_Singly_Linked_Li.html"
+     target="_blank">Section 3.1</a> of the textbook.
+      </p>
+      <div class='exercise'>
+    	Starting with a Singly Linked List that is initially empty, illustrate the evolution of the list as the following operations are performed.
+      </div>
+      <div class='instructions'>
+        <ol>
+          <li>Click on any pointer to select it.</li>
+          <li>While holding, drag your mouse over to a node to select it.</li>
+          <li>Release your mouse button over a Node to set it as the pointer's target.</li>
+          <li>Correctly set each pointer to match the operation.</li>
+          <li>When finished, press the Check button to check your answer.</li>
+        </ol>
+       </div>
+       <div class='note'>The CUR and NEW pointers are automatically set and can be ignored for the purposes of the exercise.</div>
+       <p>
+        <a class="button check" href="nojavascript.html" onclick="Buttons.check(); return false">Check</a>
+        <a class="button default" href="nojavascript.html" onclick="Buttons.restart(); return false">Restart</a>
+        <a class="button default" href="nojavascript.html" onclick="Buttons.cleanup(); return false">Cleanup</a>
+        <a class="button default" href="nojavascript.html" onclick="Buttons.reset(); return false">Reset</a>
+        <span id="op"></span>
+        <span class="checkmark hidden">✔</span>
+      </p>
+         <div id="question">
+            <div class="listPointers">
+             <div class="node bigger head">
+              <div class="data bigger">first</div>
+              <div class="pointer"></div>
+            </div><div class="node bigger null">
+              <div class="data bigger"></div>
+              <div class="pointer"></div>
+            </div><div class="node bigger tail">
+              <div class="data bigger">last</div>
+              <div class="pointer"></div>
+            </div></div>
+            <div class="inners"></div>
+            <div class="node bigger cur">
+              <div class="data bigger">CUR</div>
+              <div class="pointer"></div>
+            </div><div class="node bigger new">
+              <div class="data bigger">NEW</div>
+              <div class="pointer"></div>
+            </div>
+       </div>
+       <br>
+       <p>
+    </div>
+    </div> <!-- contents -->
+  </body>
+  <script>Hyphenator.run();</script>
+</html>
+
+

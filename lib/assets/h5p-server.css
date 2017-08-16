@@ -58,7 +58,6 @@ body,
   width: 100%;
 }
 .h5p-dev-header:before {
-  background: url(/assets/h5p.png) no-repeat;
   content: " ";
   width: 3rem;
   height: 3rem;

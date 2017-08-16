@@ -1,0 +1,52 @@
+tr(id="row" + qNum,data-index=qNum)
+  td
+    - if (op === "add"){
+    | add(
+    | #{index}, '
+    div(class='element')=value
+    |');
+    - } else if (op === "remove") {
+    | remove(#{index});
+    - } else {
+    | set(#{index}, '
+    div(class='element')=value
+    | ');
+    - }
+  td
+    ul(id="set" + qNum, class="textin items", data-def-size="1")
+      li
+        div.droppable(data-index='0')
+    img.trash(src='img/trash.jpg', height='10', width='10')
+  td
+    a.button(href='nojavascript.html', onclick='Button.check(this); return false') Check
+    a.button(href='nojavascript.html', onclick='Button.reset(this); return false') Reset
+  td
+    span#c.hidden= answer
+tr(id="reset" + qNum,class="hidden",data-index=qNum)
+  td
+    - if (op === "add"){
+    | add(
+    | #{index}, '
+    div(class='element')=value
+    |');
+    - } else if (op === "remove") {
+    | remove(#{index});
+    - } else {
+    | set(#{index}, '
+    div(class='element')=value
+    | ');
+    - }
+  td
+    ul(id="set" + qNum, class="textin items", data-def-size="1")
+      li
+        div.droppable(data-index='0')
+    img.trash(src='img/trash.jpg', height='10', width='10')
+  td
+    a.button(href='nojavascript.html', onclick='Button.check(this); return false') Check
+    a.button(href='nojavascript.html', onclick='Button.reset(this); return false') Reset
+  td
+    span#c.hidden= answer
+tr(id="indices" + qNum, class="indices")
+  td
+  td
+    span.textin 0

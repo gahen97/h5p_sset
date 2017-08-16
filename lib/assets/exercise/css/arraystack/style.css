@@ -1,0 +1,160 @@
+
+      body {
+        font: 14pt/22pt serif;
+      }
+      div.titleblock {
+        /* background-color: #abcdd9; */
+        background-color: rgb(204,0,51); /* CU red */ 
+        padding: 4ex 4ex 4ex 4ex;
+        color: white;
+      }
+      div.title {
+        padding: 1ex 0ex 1ex 0ex;
+        font-size: 168%;
+        font-family: "FreeSans", sans-serif;
+        font-weight: 900;
+      }
+      div.subtitle {
+        font-size: 100%;
+        font-family: "FreeSans", sans-serif;
+      }
+      a.button {
+        padding: 3pt 6pt 3pt 6pt;
+        border: 2px solid rgb(204,0,51); /* CU red */ 
+        color: rgb(204,0,51); /* CU red */ 
+        margin-left: 9px;
+      }
+      a.button:active {
+        border-color: black;
+        border-style: black;
+        color: black;
+      }
+      #contents {
+         margin: auto;
+	 max-width: 784px;
+         text-align: justify;
+      }
+      a {
+          text-decoration: none;
+          color: rgb(204,0,51); /* CU red */ 
+      }
+      .hidden {
+          display: none;
+      }
+      div.exercise:before {
+        font-weight: bold;
+	content: "Exercise:";
+      }
+      div.exercise {
+	margin-left: 100px;
+      }
+      div.instructions{
+	font-size: 12pt;
+      }
+      div.instructions>ol{
+	margin: 0;
+      }
+      div.instructions:before{
+        font-weight: bold;
+        content: "INSTRUCTIONS: ";
+      }
+      div.note:before{
+        font-weight: bold;
+        content: "NOTE: ";
+      }
+      div.note{
+        font-size: 12pt;
+      }
+      div.note > ul {
+        margin-top: 0;
+      }
+      div.note > ul > li {
+        font-size: 12pt;
+      }
+      div.note > ul > li.highlight{
+        font-weight: bold;
+      }
+      div.droppable {
+      	height: 80%;
+      	display: inline-block;
+      	padding-left: 0;
+      	padding-right: 0;
+      	margin-left: 0;
+      	margin-right: 0;
+        width: 20px;
+      }
+      div.droppable.hover{
+        opacity: 0.4;
+        background-color: #000;
+      }
+      div.over {
+        position: absolute;
+        z-index: 2;
+      }
+      div.under {
+        position: absolute;
+        z-index: 1;
+      }
+      .errormsg {
+         color: red;
+      }
+      #question {
+          font-family: monospace;
+	  size: 12px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .textin {
+          letter-spacing: 1em;
+      }
+      span.textin {
+          color: lightgray;
+          margin-top: 3px;
+          padding-bottom: 1em;
+          padding-left: 5px;
+      }
+      ul.textin {
+	  margin: 0;
+          padding-left: 3px;
+          margin-right: 3em;
+          border: 2px solid rgb(204,0,51); /* CU red */ 
+          width: 40px;
+          height: 15px;
+          display: inline-block;
+      }
+      ul.textin > li{
+        display: inline-block;
+      }
+      div.textin {
+      	  display: inline-block;
+      }
+      span.checkmark {
+          font-size: 200%;
+      }
+      ul.new{
+      	display: inline-block;
+      }
+      ul.correct{
+        border-color: green !important; /* medium sea green */
+      }
+      a.correct{
+        border-color: green;
+        color: green;
+      }
+      .element.correct{
+        color: green;
+      }
+      .ui-state-hover{
+        background-color: #f00;
+      }
+      div.element{
+        display: inline-block;
+      }
+      img.trash{
+        margin-right: 10px;
+        z-index: 99;
+      }
